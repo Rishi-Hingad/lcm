@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-30 12:28:22.069577",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case",
+  "case_lawyer",
+  "email_address",
+  "hearing_date",
+  "hearing_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "case",
+   "fieldtype": "Data",
+   "label": "Case"
+  },
+  {
+   "fieldname": "case_lawyer",
+   "fieldtype": "Data",
+   "label": "Case Lawyer"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "label": "Hearing Date"
+  },
+  {
+   "fieldname": "hearing_details",
+   "fieldtype": "Data",
+   "label": "Hearing Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-30 12:37:00.011302",
+ "modified_by": "Administrator",
+ "module": "Legal Case Management",
+ "name": "Hearing Date",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

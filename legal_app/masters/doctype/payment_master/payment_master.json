@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-21 11:15:06.136074",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "payment_details_section",
+  "payment_for",
+  "case",
+  "bill_date",
+  "paid_amount",
+  "lawyer",
+  "paid_for_lawyer",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "payment_for",
+   "fieldtype": "Select",
+   "label": "Payment For",
+   "options": "Case\nLawyer"
+  },
+  {
+   "fieldname": "case",
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Case Master"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "lawyer",
+   "fieldtype": "Link",
+   "label": "Lawyer",
+   "options": "Lawyer Master"
+  },
+  {
+   "fieldname": "paid_for_lawyer",
+   "fieldtype": "Currency",
+   "label": "Paid For Lawyer"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-21 11:19:42.201062",
+ "modified_by": "Administrator",
+ "module": "Masters",
+ "name": "Payment Master",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
