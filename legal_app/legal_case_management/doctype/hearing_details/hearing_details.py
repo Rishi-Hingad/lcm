@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class HearingDate(Document):
+class HearingDetails(Document):
 	pass

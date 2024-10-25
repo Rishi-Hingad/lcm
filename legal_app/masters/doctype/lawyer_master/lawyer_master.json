@@ -9,29 +9,23 @@
  "field_order": [
   "personal_details_section",
   "full_name",
-  "lawyer_email",
   "mobile",
+  "column_break_xggs",
+  "lawyer_email",
   "lawyer_address",
-  "photo",
   "official_details_section",
-  "lawyer_type",
-  "time_based_bill_rate",
-  "payment_brief",
+  "fees",
   "currency",
   "column_break_ggpn",
-  "case_based_bill_rate",
-  "monthly_bill_rate",
-  "currency_payment_type",
   "payment_brief_arrangements",
   "section_break_arao",
-  "table_yzvu"
+  "payment_details"
  ],
  "fields": [
   {
    "fieldname": "full_name",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Full Name",
-   "options": "People Master",
    "unique": 1
   },
   {
@@ -55,50 +49,13 @@
    "label": "Address"
   },
   {
-   "fieldname": "photo",
-   "fieldtype": "Attach Image",
-   "label": "Photo"
-  },
-  {
    "fieldname": "official_details_section",
    "fieldtype": "Section Break",
    "label": "Official Details"
   },
   {
-   "fieldname": "lawyer_type",
-   "fieldtype": "Select",
-   "label": "Lawyer Type",
-   "options": "Arbitration Petition\nConsumer Lawyer\nLaw Firm"
-  },
-  {
-   "fieldname": "time_based_bill_rate",
-   "fieldtype": "Currency",
-   "label": "Time Based Bill Rate"
-  },
-  {
-   "fieldname": "payment_brief",
-   "fieldtype": "Data",
-   "label": "Payment Brief"
-  },
-  {
    "fieldname": "column_break_ggpn",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "case_based_bill_rate",
-   "fieldtype": "Currency",
-   "label": "Case Based Bill Rate",
-   "options": "Arbitration Petition\nConsumer Lawyer\nLaw Firm"
-  },
-  {
-   "fieldname": "monthly_bill_rate",
-   "fieldtype": "Currency",
-   "label": "Monthly Bill Rate"
-  },
-  {
-   "fieldname": "currency_payment_type",
-   "fieldtype": "Data",
-   "label": "Currency Payment Type"
   },
   {
    "fieldname": "currency",
@@ -115,14 +72,25 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_yzvu",
+   "fieldname": "column_break_xggs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fees",
+   "fieldtype": "Currency",
+   "label": "Fees",
+   "options": "Arbitration Petition\nConsumer Lawyer\nLaw Firm"
+  },
+  {
+   "fieldname": "payment_details",
    "fieldtype": "Table",
+   "label": "Payment Details",
    "options": "Payment Master"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-21 11:48:30.231665",
+ "modified": "2024-10-25 18:15:44.895559",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Lawyer Master",

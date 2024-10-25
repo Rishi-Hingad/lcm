@@ -6,12 +6,9 @@
  "engine": "InnoDB",
  "field_order": [
   "payment_details_section",
-  "payment_for",
   "case",
-  "bill_date",
-  "paid_amount",
-  "lawyer",
-  "paid_for_lawyer",
+  "invoice_date",
+  "amount",
   "description"
  ],
  "fields": [
@@ -21,48 +18,31 @@
    "label": "Payment Details"
   },
   {
-   "fieldname": "payment_for",
-   "fieldtype": "Select",
-   "label": "Payment For",
-   "options": "Case\nLawyer"
-  },
-  {
    "fieldname": "case",
    "fieldtype": "Link",
    "label": "Case",
    "options": "Case Master"
   },
   {
-   "fieldname": "bill_date",
-   "fieldtype": "Date",
-   "label": "Bill Date"
-  },
-  {
-   "fieldname": "paid_amount",
-   "fieldtype": "Currency",
-   "label": "Paid Amount"
-  },
-  {
-   "fieldname": "lawyer",
-   "fieldtype": "Link",
-   "label": "Lawyer",
-   "options": "Lawyer Master"
-  },
-  {
-   "fieldname": "paid_for_lawyer",
-   "fieldtype": "Currency",
-   "label": "Paid For Lawyer"
-  },
-  {
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-10-21 11:19:42.201062",
+ "modified": "2024-10-25 18:16:40.036212",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Payment Master",

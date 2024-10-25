@@ -8,19 +8,17 @@
  "field_order": [
   "section_break_11zs",
   "case_title",
-  "meril_entity",
+  "lawyer",
   "opposite_party",
   "case_type",
   "case_description",
-  "notice_number_if_any",
+  "notice_no",
   "column_break_naet",
-  "lawyer",
-  "starting_date",
+  "meril_entity",
   "filing_date",
-  "suit_amount",
-  "case_stage",
+  "amount",
   "meril_role",
-  "amended_from",
+  "case_status",
   "opposing_clients_section",
   "table_bque",
   "section_break_mrgc",
@@ -28,7 +26,8 @@
   "location_section",
   "city_name",
   "state_name",
-  "country_name"
+  "country_name",
+  "amended_from"
  ],
  "fields": [
   {
@@ -81,43 +80,15 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "starting_date",
-   "fieldtype": "Date",
-   "label": "Starting Date"
-  },
-  {
    "fieldname": "filing_date",
    "fieldtype": "Date",
    "label": "Filing Date"
-  },
-  {
-   "fieldname": "suit_amount",
-   "fieldtype": "Currency",
-   "label": "Suit Amount"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "case_stage",
-   "fieldtype": "Link",
-   "label": "Case Stage",
-   "no_copy": 1,
-   "options": "Case Stages Master"
   },
   {
    "fieldname": "meril_role",
    "fieldtype": "Link",
    "label": "Meril Role",
    "options": "Meril Role Master"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Case Master",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "section_break_mrgc",
@@ -160,16 +131,36 @@
    "label": "Country Name"
   },
   {
-   "fieldname": "notice_number_if_any",
+   "fieldname": "notice_no",
    "fieldtype": "Link",
-   "label": "Notice Number if any",
+   "label": "Notice No.",
    "options": "Notice Master"
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Data",
+   "label": "Case Status"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Case Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-23 11:25:57.466185",
+ "modified": "2024-10-25 18:11:55.081546",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Master",

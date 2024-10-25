@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestHearingDate(FrappeTestCase):
+class TestHearingDetails(FrappeTestCase):
 	pass
