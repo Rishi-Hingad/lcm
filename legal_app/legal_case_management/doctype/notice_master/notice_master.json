@@ -8,22 +8,22 @@
  "field_order": [
   "law_column",
   "notice_number",
-  "meril_entity",
   "opposite_party",
-  "meril_role",
   "date_of_notice",
-  "notice_type",
   "notice_receive_date",
-  "reply_date",
   "lawyer",
-  "data_dwpl",
-  "notice_description"
+  "notice_description",
+  "column_break_ldbs",
+  "meril_entity",
+  "meril_role",
+  "notice_type",
+  "reply_date",
+  "document"
  ],
  "fields": [
   {
    "fieldname": "law_column",
-   "fieldtype": "Column Break",
-   "label": "Law"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "meril_entity",
@@ -45,11 +45,6 @@
    "fieldname": "notice_receive_date",
    "fieldtype": "Date",
    "label": "Notice Receive Date"
-  },
-  {
-   "fieldname": "data_dwpl",
-   "fieldtype": "Attach",
-   "label": "Document Upload"
   },
   {
    "fieldname": "lawyer",
@@ -82,12 +77,21 @@
    "fieldname": "date_of_notice",
    "fieldtype": "Date",
    "label": "Date of Notice"
+  },
+  {
+   "fieldname": "column_break_ldbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2024-10-23 14:25:57.653014",
+ "modified": "2024-10-25 18:12:49.035835",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Notice Master",

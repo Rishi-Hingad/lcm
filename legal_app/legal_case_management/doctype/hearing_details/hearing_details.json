@@ -6,10 +6,13 @@
  "engine": "InnoDB",
  "field_order": [
   "case",
-  "case_lawyer",
   "email_address",
+  "hearing_details",
+  "hearing_documents",
+  "column_break_bovn",
+  "case_lawyer",
   "hearing_date",
-  "hearing_details"
+  "case_stage"
  ],
  "fields": [
   {
@@ -34,16 +37,30 @@
   },
   {
    "fieldname": "hearing_details",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Hearing Details"
+  },
+  {
+   "fieldname": "hearing_documents",
+   "fieldtype": "Attach",
+   "label": "Hearing Documents"
+  },
+  {
+   "fieldname": "column_break_bovn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_stage",
+   "fieldtype": "Data",
+   "label": "Case Stage"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-30 12:37:00.011302",
+ "modified": "2024-10-25 18:14:15.875463",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
- "name": "Hearing Date",
+ "name": "Hearing Details",
  "owner": "Administrator",
  "permissions": [
   {
