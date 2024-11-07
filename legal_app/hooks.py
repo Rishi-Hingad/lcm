@@ -144,7 +144,8 @@ fixtures = [
             "Case Witness",
             "Case Types Master",
             "Meril Role Master",
-            "Case Stages Master"]
+            "Case Stages Master",
+            "Currency Master"]
 
 
 # Document Events
