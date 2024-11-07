@@ -1,0 +1,17 @@
+[
+ {
+  "address": "Mumbai",
+  "department": "Sales",
+  "docstatus": 0,
+  "doctype": "Case Witness",
+  "email": "sanjibkumar@merillife.com",
+  "location": "Mumbai",
+  "mobile_number": null,
+  "modified": "2024-11-06 09:46:40.065962",
+  "name": "Sanjib Kumar",
+  "name1": "Sanjib Kumar",
+  "parent": "CC/323/2021",
+  "parentfield": "case_witness",
+  "parenttype": "Case Master"
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "case_stages": "Filing the Case",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:20:49.203412",
+  "name": "Filing the Case"
+ },
+ {
+  "case_stages": "Summons/Notice",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:12.565603",
+  "name": "Summons/Notice"
+ },
+ {
+  "case_stages": "Appearance and Pleadings",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:23.508850",
+  "name": "Appearance and Pleadings"
+ },
+ {
+  "case_stages": "Framing of Issues",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:33.690317",
+  "name": "Framing of Issues"
+ },
+ {
+  "case_stages": "Evidence",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:42.514803",
+  "name": "Evidence"
+ },
+ {
+  "case_stages": "Cross-Examination",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:51.336612",
+  "name": "Cross-Examination"
+ },
+ {
+  "case_stages": "Arguments",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:22:03.292381",
+  "name": "Arguments"
+ },
+ {
+  "case_stages": "Judgment",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:22:20.574860",
+  "name": "Judgment"
+ },
+ {
+  "case_stages": "Appeal",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:22:29.220630",
+  "name": "Appeal"
+ },
+ {
+  "case_stages": "Execution of Judgment",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:22:37.810376",
+  "name": "Execution of Judgment"
+ },
+ {
+  "case_stages": "Review and Revision",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:23:03.543312",
+  "name": "Review and Revision"
+ },
+ {
+  "case_stages": "Settlement or Mediation",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:23:21.048296",
+  "name": "Settlement or Mediation"
+ },
+ {
+  "case_stages": "Rejoinder",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-11-06 12:29:24.666629",
+  "name": "Rejoinder"
+ },
+ {
+  "case_stages": "Preliminary Hearing",
+  "docstatus": 0,
+  "doctype": "Case Stages Master",
+  "modified": "2024-10-26 11:21:01.536530",
+  "name": "Preliminary Hearing"
+ }
+]

@@ -1,0 +1,58 @@
+[
+ {
+  "currency_type": null,
+  "docstatus": 0,
+  "doctype": "Lawyer Master",
+  "fees": 0.0,
+  "full_name": "Amit Kumar",
+  "lawyer_address": null,
+  "lawyer_email": null,
+  "mobile": null,
+  "modified": "2024-11-06 09:37:18.292386",
+  "name": "Amit Kumar",
+  "payment_brief_arrangements": null,
+  "payment_details": []
+ },
+ {
+  "currency_type": null,
+  "docstatus": 0,
+  "doctype": "Lawyer Master",
+  "fees": 0.0,
+  "full_name": "Deepak Pandya",
+  "lawyer_address": null,
+  "lawyer_email": null,
+  "mobile": null,
+  "modified": "2024-11-06 09:39:39.989342",
+  "name": "Deepak Pandya",
+  "payment_brief_arrangements": null,
+  "payment_details": []
+ },
+ {
+  "currency_type": null,
+  "docstatus": 0,
+  "doctype": "Lawyer Master",
+  "fees": 0.0,
+  "full_name": "Wadiya Gandhi",
+  "lawyer_address": null,
+  "lawyer_email": null,
+  "mobile": null,
+  "modified": "2024-11-06 09:39:21.270024",
+  "name": "Wadiya Gandhi",
+  "payment_brief_arrangements": null,
+  "payment_details": []
+ },
+ {
+  "currency_type": null,
+  "docstatus": 0,
+  "doctype": "Lawyer Master",
+  "fees": 1000000.0,
+  "full_name": "Kapil SIbal",
+  "lawyer_address": "Loreum Lopsuem",
+  "lawyer_email": "kapil.sibal@merillife.com",
+  "mobile": "+91-9824135675",
+  "modified": "2024-10-26 12:41:50.421303",
+  "name": "Kapil SIbal",
+  "payment_brief_arrangements": "Per Hearing",
+  "payment_details": []
+ }
+]

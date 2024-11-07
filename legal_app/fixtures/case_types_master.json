@@ -1,0 +1,58 @@
+[
+ {
+  "case_types": "Criminal Case",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:36:10.322435",
+  "name": "Criminal Case"
+ },
+ {
+  "case_types": "Writ Petitions",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:36:49.194218",
+  "name": "Writ Petitions"
+ },
+ {
+  "case_types": "Tribunal Case",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:37:13.306940",
+  "name": "Tribunal Case"
+ },
+ {
+  "case_types": "Corporate Case",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:37:23.959128",
+  "name": "Corporate Case"
+ },
+ {
+  "case_types": "Intellectual Property Case",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:38:02.322705",
+  "name": "Intellectual Property Case"
+ },
+ {
+  "case_types": "Arbitration and Conciliation",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:37:01.902355",
+  "name": "Arbitration and Conciliation"
+ },
+ {
+  "case_types": "Civil Case",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:35:42.732565",
+  "name": "Civil Case"
+ },
+ {
+  "case_types": "Consumer Compliant",
+  "docstatus": 0,
+  "doctype": "Case Types Master",
+  "modified": "2024-10-26 11:36:39.603852",
+  "name": "Consumer Compliant"
+ }
+]
