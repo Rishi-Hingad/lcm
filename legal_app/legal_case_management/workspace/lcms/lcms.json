@@ -1,10 +1,6 @@
 {
  "charts": [
   {
-   "chart_name": "Total No. of Cases",
-   "label": "Total No. of Cases"
-  },
-  {
    "chart_name": "No. of Closed Cases",
    "label": "No. of Closed Cases"
   },
@@ -21,11 +17,15 @@
    "label": "No. of Open Cases"
   },
   {
+   "chart_name": "Total No. of Cases",
+   "label": "Total No. of Cases"
+  },
+  {
    "chart_name": "Team Distribution",
    "label": "Team Distribution"
   }
  ],
- "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Legal Case Management System (LCMS)</span>\",\"col\":12}},{\"id\":\"CGKSiWJeW9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total No. of Cases\",\"col\":3}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":3}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":3}},{\"id\":\"jV3fIZUqvr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":12}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":12}},{\"id\":\"8P_xMU8uEA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Team Distribution\",\"col\":12}}]",
+ "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Legal Case Management System (LCMS)</span>\",\"col\":12}},{\"id\":\"CGKSiWJeW9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total No. of Cases\",\"col\":3}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":3}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":3}},{\"id\":\"4HWd6iDse5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calendar\",\"col\":5}},{\"id\":\"jV3fIZUqvr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":12}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":12}},{\"id\":\"8P_xMU8uEA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Team Distribution\",\"col\":12}}]",
  "creation": "2024-10-28 09:48:20.484120",
  "custom_blocks": [],
  "docstatus": 0,
@@ -38,7 +38,7 @@
  "is_hidden": 0,
  "label": "LCMS",
  "links": [],
- "modified": "2024-11-07 12:48:01.226903",
+ "modified": "2024-11-07 18:30:41.357899",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "LCMS",
@@ -66,25 +66,21 @@
  "quick_lists": [],
  "roles": [
   {
-   "role": "IP"
-  },
-  {
-   "role": "Litigation"
-  },
-  {
-   "role": "Distributor"
-  },
-  {
    "role": "System Manager"
   },
   {
    "role": "Administrator"
-  },
-  {
-   "role": "Distributor"
   }
  ],
  "sequence_id": 1.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Calendar",
+   "type": "URL",
+   "url": "http://localhost:8002/app/hearing-details/view/calendar/Upcoming%20Hearing%20Date"
+  }
+ ],
  "title": "LCMS"
 }

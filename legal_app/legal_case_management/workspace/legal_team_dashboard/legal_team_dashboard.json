@@ -1,12 +1,12 @@
 {
  "charts": [
   {
-   "chart_name": "Legal No. of Open Cases",
-   "label": "No. of Open Cases"
-  },
-  {
    "chart_name": "Legal Total No. of Cases",
    "label": "Legal Total No. of Cases"
+  },
+  {
+   "chart_name": "Legal No. of Open Cases",
+   "label": "No. of Open Cases"
   },
   {
    "chart_name": "Legal No. of Closed Cases",
@@ -21,7 +21,7 @@
    "label": "Meril Roles"
   }
  ],
- "content": "[{\"id\":\"vAx4Zw8EP4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"oeq0enemvN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Legal Total No. of Cases\",\"col\":3}},{\"id\":\"O-j9k4yRh7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Notice Count\",\"col\":3}},{\"id\":\"FC2mUwgaRN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Cases Count\",\"col\":3}},{\"id\":\"OuFTjDmoKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Closed Case Count\",\"col\":3}},{\"id\":\"4vZSNaXz7o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Notice\",\"col\":4}},{\"id\":\"dIuPvKF2Ul\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Case\",\"col\":4}},{\"id\":\"hYRHUvhfuO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Hearing\",\"col\":4}},{\"id\":\"X_OIbc5Anq\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Cases Details\",\"col\":12}},{\"id\":\"eOItfaA7yl\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Legal Total No. of Cases\",\"col\":6}},{\"id\":\"vFElGEUI8V\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"yPymsarn64\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"vANZXXdTGW\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":6}},{\"id\":\"W3vWiEoY-M\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}}]",
+ "content": "[{\"id\":\"vAx4Zw8EP4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"oeq0enemvN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Legal Total No. of Cases\",\"col\":3}},{\"id\":\"O-j9k4yRh7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Notice Count\",\"col\":3}},{\"id\":\"FC2mUwgaRN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Cases Count\",\"col\":3}},{\"id\":\"OuFTjDmoKg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Closed Case Count\",\"col\":3}},{\"id\":\"4vZSNaXz7o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Notice\",\"col\":4}},{\"id\":\"dIuPvKF2Ul\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Case\",\"col\":4}},{\"id\":\"hYRHUvhfuO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Hearing\",\"col\":4}},{\"id\":\"ZcBHbYjDgQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hearing Date Calendar\",\"col\":3}},{\"id\":\"X_OIbc5Anq\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Cases Details\",\"col\":12}},{\"id\":\"eOItfaA7yl\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Legal Total No. of Cases\",\"col\":6}},{\"id\":\"vFElGEUI8V\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"yPymsarn64\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"vANZXXdTGW\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":6}},{\"id\":\"W3vWiEoY-M\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}}]",
  "creation": "2024-11-06 15:56:54.374624",
  "custom_blocks": [
   {
@@ -39,22 +39,22 @@
  "is_hidden": 0,
  "label": "Legal Team Dashboard",
  "links": [],
- "modified": "2024-11-07 14:42:24.444603",
+ "modified": "2024-11-07 18:32:51.062271",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Legal Team Dashboard",
  "number_cards": [
   {
-   "label": "Open Cases Count",
-   "number_card_name": "Open Casessss"
+   "label": "Legal Total No. of Cases",
+   "number_card_name": "Legal Total No. of Cases"
   },
   {
    "label": "Notice Count",
    "number_card_name": "Legal Notice"
   },
   {
-   "label": "Legal Total No. of Cases",
-   "number_card_name": "Legal Total No. of Cases"
+   "label": "Open Cases Count",
+   "number_card_name": "Open Casessss"
   },
   {
    "label": "Closed Case Count",
@@ -65,9 +65,26 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Litigation"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
  "sequence_id": 2.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hearing Date Calendar",
+   "type": "URL",
+   "url": "http://localhost:8002/app/hearing-details/view/calendar/Upcoming%20Hearing%20Date"
+  },
   {
    "color": "Grey",
    "doc_view": "New",
