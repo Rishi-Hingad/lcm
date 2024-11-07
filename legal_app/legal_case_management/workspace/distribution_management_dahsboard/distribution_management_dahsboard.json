@@ -1,6 +1,27 @@
 {
- "charts": [],
- "content": "[{\"id\":\"D2Xdd9dGou\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"Qkm23XP_Nv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notice\",\"col\":4}},{\"id\":\"CZnZp6433U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":4}},{\"id\":\"dGdtpudTxg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Cases\",\"col\":4}},{\"id\":\"9dtjele8Uu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Notice\",\"col\":4}},{\"id\":\"5tgYr0Uf14\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Case\",\"col\":4}},{\"id\":\"db4LhQO0FQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Hearing\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Distribution Management Total No. of Cases",
+   "label": "Total No. of Cases"
+  },
+  {
+   "chart_name": "Distribution Management Meril Roles",
+   "label": "Meril Roles"
+  },
+  {
+   "chart_name": "Distribution Management No. of Closed Cases",
+   "label": "No. of Closed Cases"
+  },
+  {
+   "chart_name": "Distribution Management No. of Open Cases",
+   "label": "No. of Open Cases"
+  },
+  {
+   "chart_name": "Distribution Management Case Type Distribution",
+   "label": "Case Type Distribution"
+  }
+ ],
+ "content": "[{\"id\":\"D2Xdd9dGou\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"ij1fvQetTq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Distribution Management System Total No. of Cases\",\"col\":3}},{\"id\":\"Qkm23XP_Nv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notice\",\"col\":3}},{\"id\":\"CZnZp6433U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"dGdtpudTxg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Cases\",\"col\":3}},{\"id\":\"9dtjele8Uu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Notice\",\"col\":4}},{\"id\":\"5tgYr0Uf14\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Case\",\"col\":4}},{\"id\":\"db4LhQO0FQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Hearing\",\"col\":4}},{\"id\":\"datGGZyj9J\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":6}},{\"id\":\"Ng3csww2Wz\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"FP2MnQkW7u\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"2jessbOhQB\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":6}},{\"id\":\"-IO6-2HUSS\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}}]",
  "creation": "2024-11-06 10:46:48.506881",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,11 +34,15 @@
  "is_hidden": 0,
  "label": "Distribution Management Dahsboard",
  "links": [],
- "modified": "2024-11-06 16:55:29.325886",
+ "modified": "2024-11-07 14:54:46.923364",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Distribution Management Dahsboard",
  "number_cards": [
+  {
+   "label": "Distribution Management System Total No. of Cases",
+   "number_card_name": "Distribution Management System Total No. of Cases"
+  },
   {
    "label": "No. of Notice",
    "number_card_name": "DM Notice"

@@ -1,13 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{case}-hearing",
+ "autoname": "{{case}}-Hearing-{##}",
  "creation": "2024-09-30 12:28:22.069577",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "legal_teams",
   "case",
+  "legal_teams",
   "email_address",
   "details_of_hearing",
   "column_break_bovn",
@@ -15,7 +15,7 @@
   "case_stages",
   "hearing_date",
   "hearing_documents",
-  "evidence_documents"
+  "other_documents"
  ],
  "fields": [
   {
@@ -50,7 +50,6 @@
    "fetch_from": "case.legal_team",
    "fieldname": "legal_teams",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Legal Teams",
    "show_on_timeline": 1
   },
@@ -70,18 +69,18 @@
    "label": "Hearing Documents"
   },
   {
-   "fieldname": "evidence_documents",
+   "fieldname": "other_documents",
    "fieldtype": "Attach",
-   "label": "Evidence Documents"
+   "label": "Other Documents"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-06 17:53:30.089444",
+ "modified": "2024-11-07 17:11:50.248660",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Hearing Details",
- "naming_rule": "Expression",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
