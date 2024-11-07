@@ -133,7 +133,18 @@ app_license = "mit"
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
-fixtures = ["Custom Script"]
+fixtures = [
+    # "Custom Script",
+            "Notice Master",
+            "Case Master",
+            "Hearing Details",
+            "Lawyer Master",
+            "People Master",
+            "Opposing Clients",
+            "Case Witness",
+            "Case Types Master",
+            "Meril Role Master",
+            "Case Stages Master"]
 
 
 # Document Events
