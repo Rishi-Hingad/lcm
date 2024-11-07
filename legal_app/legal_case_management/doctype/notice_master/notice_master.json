@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "law_column",
-  "notice_number",
+  "legal_team",
   "opposite_party",
   "date_of_notice",
   "notice_receive_date",
@@ -29,7 +29,7 @@
    "fieldname": "meril_entity",
    "fieldtype": "Select",
    "label": "Meril Entity",
-   "options": "Micro Life Sciences Private Limited\nMeril Life Sciences Private Limited\nMeril Life Sciences India Private Limited\nMeril Diagnostics Private Limited\nMeril Endo Surgery Private Limited\nMeril Healthcare Private Limited\nMeril Medical Innovations Private Limited\nNone"
+   "options": "-Select-\nMicro Life Sciences Private Limited\nMeril Life Sciences Private Limited\nMeril Life Sciences India Private Limited\nMeril Diagnostics Private Limited\nMeril Endo Surgery Private Limited\nMeril Healthcare Private Limited\nMeril Medical Innovations Private Limited\nNone"
   },
   {
    "fieldname": "opposite_party",
@@ -63,11 +63,6 @@
    "label": "Notice Description"
   },
   {
-   "fieldname": "notice_number",
-   "fieldtype": "Data",
-   "label": "Notice Number"
-  },
-  {
    "fieldname": "meril_role",
    "fieldtype": "Link",
    "label": "Meril Role",
@@ -86,12 +81,18 @@
    "fieldname": "document",
    "fieldtype": "Attach",
    "label": "Document"
+  },
+  {
+   "fieldname": "legal_team",
+   "fieldtype": "Select",
+   "label": "Legal Team",
+   "options": "-Select-\nIP\nDistribution\nLegal"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2024-10-25 18:12:49.035835",
+ "modified": "2024-11-06 12:11:00.659004",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Notice Master",

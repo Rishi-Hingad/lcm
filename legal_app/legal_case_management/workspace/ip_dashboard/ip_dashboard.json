@@ -1,0 +1,42 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"h51mlmDLL6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"-VX2k-GJUU\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":4}},{\"id\":\"80wZD8hitZ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":4}},{\"id\":\"zi_zaL3KHe\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":4}}]",
+ "creation": "2024-11-06 10:45:45.051977",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "solid-success",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "IP Dashboard",
+ "links": [],
+ "modified": "2024-11-06 16:56:50.163121",
+ "modified_by": "Administrator",
+ "module": "Legal Case Management",
+ "name": "IP Dashboard",
+ "number_cards": [
+  {
+   "label": "No. of Notices",
+   "number_card_name": "IP Notice"
+  },
+  {
+   "label": "No. of Open Cases",
+   "number_card_name": "IP Open Cases"
+  },
+  {
+   "label": "No. of Closed Case",
+   "number_card_name": "IP Closed Cases"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 4.0,
+ "shortcuts": [],
+ "title": "IP Dashboard"
+}

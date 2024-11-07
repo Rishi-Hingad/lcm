@@ -15,7 +15,7 @@
   "lawyer_address",
   "official_details_section",
   "fees",
-  "currency",
+  "currency_type",
   "column_break_ggpn",
   "payment_brief_arrangements",
   "section_break_arao",
@@ -58,11 +58,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "currency",
-   "fieldtype": "Currency",
-   "label": "Currency"
-  },
-  {
    "fieldname": "payment_brief_arrangements",
    "fieldtype": "Data",
    "label": "Payment Brief/ Arrangements"
@@ -86,11 +81,17 @@
    "fieldtype": "Table",
    "label": "Payment Details",
    "options": "Payment Master"
+  },
+  {
+   "fieldname": "currency_type",
+   "fieldtype": "Link",
+   "label": "Currency Type",
+   "options": "Currency Master"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-25 18:15:44.895559",
+ "modified": "2024-10-26 12:47:26.992656",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Lawyer Master",

@@ -1,26 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{case}-hearing",
  "creation": "2024-09-30 12:28:22.069577",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "legal_teams",
   "case",
   "email_address",
-  "hearing_details",
-  "hearing_documents",
+  "details_of_hearing",
   "column_break_bovn",
   "case_lawyer",
+  "case_stages",
   "hearing_date",
-  "case_stage"
+  "hearing_documents",
+  "evidence_documents"
  ],
  "fields": [
   {
    "fieldname": "case",
-   "fieldtype": "Data",
-   "label": "Case"
+   "fieldtype": "Link",
+   "label": "Case",
+   "options": "Case Master"
   },
   {
+   "fetch_from": "case.lawyer_name",
    "fieldname": "case_lawyer",
    "fieldtype": "Data",
    "label": "Case Lawyer"
@@ -31,14 +36,33 @@
    "label": "Email Address"
   },
   {
+   "fieldname": "column_break_bovn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case.case_stage",
+   "fetch_if_empty": 1,
+   "fieldname": "case_stages",
+   "fieldtype": "Data",
+   "label": "Case Stages"
+  },
+  {
+   "fetch_from": "case.legal_team",
+   "fieldname": "legal_teams",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Legal Teams",
+   "show_on_timeline": 1
+  },
+  {
+   "fieldname": "details_of_hearing",
+   "fieldtype": "Small Text",
+   "label": "Details of Hearing"
+  },
+  {
    "fieldname": "hearing_date",
    "fieldtype": "Date",
    "label": "Hearing Date"
-  },
-  {
-   "fieldname": "hearing_details",
-   "fieldtype": "Small Text",
-   "label": "Hearing Details"
   },
   {
    "fieldname": "hearing_documents",
@@ -46,21 +70,18 @@
    "label": "Hearing Documents"
   },
   {
-   "fieldname": "column_break_bovn",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "case_stage",
-   "fieldtype": "Data",
-   "label": "Case Stage"
+   "fieldname": "evidence_documents",
+   "fieldtype": "Attach",
+   "label": "Evidence Documents"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-25 18:14:15.875463",
+ "modified": "2024-11-06 17:53:30.089444",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Hearing Details",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
