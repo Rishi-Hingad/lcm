@@ -1,0 +1,82 @@
+{
+ "charts": [
+  {
+   "chart_name": "Case Type Distribution",
+   "label": "Case Type Distribution"
+  },
+  {
+   "chart_name": "No. of Closed Cases",
+   "label": "No. of Closed Cases"
+  },
+  {
+   "chart_name": "No. of Open Cases",
+   "label": "No. of Open Cases"
+  },
+  {
+   "chart_name": "Meril Roles",
+   "label": "Meril Roles"
+  },
+  {
+   "chart_name": "Team Distribution",
+   "label": "Team Distribution"
+  }
+ ],
+ "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Legal Case Management System (LCMS)</span>\",\"col\":12}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":4}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":4}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":4}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":12}},{\"id\":\"8P_xMU8uEA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Team Distribution\",\"col\":12}}]",
+ "creation": "2024-10-28 09:48:20.484120",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 1,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "LCMS",
+ "links": [],
+ "modified": "2024-11-06 17:10:43.935624",
+ "modified_by": "Administrator",
+ "module": "Legal Case Management",
+ "name": "LCMS",
+ "number_cards": [
+  {
+   "label": "No. of Notices",
+   "number_card_name": "No. of Notices"
+  },
+  {
+   "label": "No. of Open Cases",
+   "number_card_name": "No. of Open Cases"
+  },
+  {
+   "label": "No. of Closed Case",
+   "number_card_name": "No. of Closed Case"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "IP"
+  },
+  {
+   "role": "Litigation"
+  },
+  {
+   "role": "Distributor"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Distributor"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "LCMS"
+}

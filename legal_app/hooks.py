@@ -133,6 +133,9 @@ app_license = "mit"
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
+fixtures = ["Custom Script"]
+
+
 # Document Events
 # ---------------
 # Hook on document methods and events

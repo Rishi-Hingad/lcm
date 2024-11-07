@@ -1,0 +1,67 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"D2Xdd9dGou\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"Qkm23XP_Nv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notice\",\"col\":4}},{\"id\":\"CZnZp6433U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":4}},{\"id\":\"dGdtpudTxg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Cases\",\"col\":4}},{\"id\":\"9dtjele8Uu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Notice\",\"col\":4}},{\"id\":\"5tgYr0Uf14\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Case\",\"col\":4}},{\"id\":\"db4LhQO0FQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Hearing\",\"col\":4}}]",
+ "creation": "2024-11-06 10:46:48.506881",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-monthly-rank",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Distribution Management Dahsboard",
+ "links": [],
+ "modified": "2024-11-06 16:55:29.325886",
+ "modified_by": "Administrator",
+ "module": "Legal Case Management",
+ "name": "Distribution Management Dahsboard",
+ "number_cards": [
+  {
+   "label": "No. of Notice",
+   "number_card_name": "DM Notice"
+  },
+  {
+   "label": "No. of Open Cases",
+   "number_card_name": "DM Open Cases"
+  },
+  {
+   "label": "No. of Closed Cases",
+   "number_card_name": "DM Closed Cases"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Notice",
+   "link_to": "Notice Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Case",
+   "link_to": "Case Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Hearing",
+   "link_to": "Hearing Details",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Distribution Management Dahsboard"
+}
