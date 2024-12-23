@@ -76,7 +76,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-07 17:11:50.248660",
+ "modified": "2024-12-23 10:44:34.425644",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Hearing Details",
@@ -98,5 +98,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
