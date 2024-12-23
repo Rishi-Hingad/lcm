@@ -90,9 +90,14 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
+ "links": [
+  {
+   "link_doctype": "Case Master",
+   "link_fieldname": "notice_number"
+  }
+ ],
  "max_attachments": 5,
- "modified": "2024-11-06 12:11:00.659004",
+ "modified": "2024-12-23 10:44:25.851835",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Notice Master",
@@ -114,5 +119,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

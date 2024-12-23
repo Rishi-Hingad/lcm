@@ -145,7 +145,8 @@ fixtures = [
             "Case Types Master",
             "Meril Role Master",
             "Case Stages Master",
-            "Currency Master"]
+            "Currency Master",
+            "Calendar View"]
 
 
 # Document Events
