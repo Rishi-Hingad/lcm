@@ -154,24 +154,46 @@ fixtures = [
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
-# }
+    "HearingDetails": {
+        "onload": "legal_app.legal_app.api.get_hearing_dates"
+    },
+
+    "HearingDetails": {
+        "after_insert": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_notification",
+    },
+
+    "CaseMaster": {
+        "after_insert": "legal_app.legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
+    },
+
+    "HearingDetails": {
+        "validate": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
+
+    }
+}
+
+calendar_events = {
+    "Hearing Details": {
+        "get_events": "legal_app.legal_app.legal_case_management.doctype.hearing_details.hearing_details.get_events"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"legal_app.tasks.all"
 # 	],
-# 	"daily": [
-# 		"legal_app.tasks.daily"
-# 	],
+ 	"daily": [
+        "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_reminder_emails"
+    ],
 # 	"hourly": [
 # 		"legal_app.tasks.hourly"
 # 	],
@@ -181,7 +203,7 @@ fixtures = [
 # 	"monthly": [
 # 		"legal_app.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

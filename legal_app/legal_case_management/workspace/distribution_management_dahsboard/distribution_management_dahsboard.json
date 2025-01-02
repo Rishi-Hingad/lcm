@@ -34,7 +34,7 @@
  "is_hidden": 0,
  "label": "Distribution Management Dahsboard",
  "links": [],
- "modified": "2024-11-07 14:54:46.923364",
+ "modified": "2025-01-02 11:43:38.063182",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Distribution Management Dahsboard",
@@ -60,14 +60,21 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Distributor"
+  }
+ ],
  "sequence_id": 3.0,
  "shortcuts": [
   {
    "color": "Grey",
    "doc_view": "New",
    "label": "New Notice",
-   "link_to": "Notice Master",
+   "link_to": "Old Notice Master",
    "stats_filter": "[]",
    "type": "DocType"
   },

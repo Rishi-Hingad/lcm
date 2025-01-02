@@ -70,13 +70,13 @@
   },
   {
    "fieldname": "department",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-30 11:23:27.659946",
+ "modified": "2024-12-23 14:30:34.134820",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "People Master",

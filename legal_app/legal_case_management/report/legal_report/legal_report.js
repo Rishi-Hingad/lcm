@@ -1,5 +1,8 @@
-frappe.query_reports["Case Detail Report"] = {
-    "filters": [
+// Copyright (c) 2025, Virali Varnagar and contributors
+// For license information, please see license.txt
+
+frappe.query_reports["Legal Report"] = {
+	"filters": [
         {
             "fieldname": "legal_team",
             "label": __("Legal Team"),
@@ -12,7 +15,7 @@ frappe.query_reports["Case Detail Report"] = {
             "reqd": 0,
             "hidden": 1
         },
-        {
+		{
             "fieldname": "opposite_party",
             "label": __("Opposite Party"),
             "fieldtype": "Data",
@@ -31,6 +34,7 @@ frappe.query_reports["Case Detail Report"] = {
             "label": __("Case Status"),
             "fieldtype": "Select",
             "options": [
+                { "label": "All", "value": "" },
                 { "label": "Open", "value": "Open" },
                 { "label": "Closed", "value": "Closed" },
                 { "label": "Re-Open", "value": "Re-Open" }
@@ -52,5 +56,6 @@ frappe.query_reports["Case Detail Report"] = {
             "options": "Lawyer Master",
             "reqd": 0
         }
-    ]
+
+	]
 };

@@ -1,5 +1,5 @@
-frappe.query_reports["Case Detail Report"] = {
-    "filters": [
+frappe.query_reports["Hearing Details Report"] = {
+	"filters": [
         {
             "fieldname": "legal_team",
             "label": __("Legal Team"),
@@ -12,7 +12,7 @@ frappe.query_reports["Case Detail Report"] = {
             "reqd": 0,
             "hidden": 1
         },
-        {
+		{
             "fieldname": "opposite_party",
             "label": __("Opposite Party"),
             "fieldtype": "Data",
@@ -26,7 +26,7 @@ frappe.query_reports["Case Detail Report"] = {
             "options": "Case Master",
             "reqd": 0
         },
-        {
+		{
             "fieldname": "case_status",
             "label": __("Case Status"),
             "fieldtype": "Select",
@@ -52,5 +52,6 @@ frappe.query_reports["Case Detail Report"] = {
             "options": "Lawyer Master",
             "reqd": 0
         }
-    ]
+
+	]
 };
