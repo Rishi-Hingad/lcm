@@ -9,6 +9,7 @@
  "field_order": [
   "details_section",
   "legal_team",
+  "email_address",
   "case_number",
   "meril_entity",
   "opposite_party",
@@ -25,11 +26,16 @@
   "case_stage",
   "case_status",
   "location_section",
-  "court_name",
+  "city_name",
   "state_name",
   "column_break_ivla",
-  "city_name",
   "country_name",
+  "court_location_details_section",
+  "court_name",
+  "court_city_name",
+  "column_break_xynx",
+  "court_state_name",
+  "court_country_name",
   "opposing_clients_section",
   "opposing_clients",
   "case_witness_section",
@@ -50,19 +56,25 @@
   {
    "fieldname": "case_number",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Case Number",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "meril_entity",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Meril Entity",
-   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd"
+   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd",
+   "reqd": 1
   },
   {
    "fieldname": "opposite_party",
    "fieldtype": "Data",
-   "label": "Opposite Party"
+   "in_list_view": 1,
+   "label": "Opposite Party",
+   "reqd": 1
   },
   {
    "fieldname": "case_type",
@@ -93,13 +105,16 @@
   {
    "fieldname": "lawyer_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Lawyer",
-   "options": "Lawyer Master"
+   "options": "Lawyer Master",
+   "reqd": 1
   },
   {
    "fieldname": "filing_date",
    "fieldtype": "Date",
-   "label": "Filing Date"
+   "label": "Filing Date",
+   "reqd": 1
   },
   {
    "fieldname": "amount",
@@ -122,7 +137,8 @@
    "fieldname": "case_stage",
    "fieldtype": "Link",
    "label": "Case Stage",
-   "options": "Case Stages Master"
+   "options": "Case Stages Master",
+   "reqd": 1
   },
   {
    "fieldname": "case_status",
@@ -133,12 +149,7 @@
   {
    "fieldname": "location_section",
    "fieldtype": "Section Break",
-   "label": "Location"
-  },
-  {
-   "fieldname": "court_name",
-   "fieldtype": "Data",
-   "label": "Court Name"
+   "label": "Case Location"
   },
   {
    "fieldname": "state_name",
@@ -180,6 +191,40 @@
    "fieldtype": "Table",
    "label": "Case Witness",
    "options": "Case Witness"
+  },
+  {
+   "fieldname": "court_location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Court Location Details"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "label": "Court Name"
+  },
+  {
+   "fieldname": "court_city_name",
+   "fieldtype": "Data",
+   "label": "Court City Name"
+  },
+  {
+   "fieldname": "column_break_xynx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "court_state_name",
+   "fieldtype": "Data",
+   "label": "Court State Name"
+  },
+  {
+   "fieldname": "court_country_name",
+   "fieldtype": "Data",
+   "label": "Court Country Name"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -189,7 +234,7 @@
    "link_fieldname": "case"
   }
  ],
- "modified": "2024-12-23 10:44:15.702160",
+ "modified": "2024-12-26 09:30:03.823163",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Master",

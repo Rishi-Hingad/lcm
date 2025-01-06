@@ -1,17 +1,18 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "field:name2",
  "creation": "2024-09-30 11:30:15.409985",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "opposing_clients_section",
-  "name1",
+  "name2",
   "mobile_number",
-  "email",
   "address",
+  "column_break_xkag",
+  "email",
   "location",
   "department"
  ],
@@ -20,13 +21,6 @@
    "fieldname": "opposing_clients_section",
    "fieldtype": "Section Break",
    "label": "Opposing Clients"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "unique": 1
   },
   {
    "fieldname": "mobile_number",
@@ -57,12 +51,23 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Department"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_xkag",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-06 09:45:38.621688",
+ "modified": "2025-01-02 00:21:55.541002",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Case Witness",

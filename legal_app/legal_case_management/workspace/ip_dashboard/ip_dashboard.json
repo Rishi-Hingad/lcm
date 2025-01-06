@@ -34,18 +34,18 @@
  "is_hidden": 0,
  "label": "IP Dashboard",
  "links": [],
- "modified": "2024-11-07 15:07:19.629505",
+ "modified": "2025-01-02 11:23:40.574183",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "IP Dashboard",
  "number_cards": [
   {
-   "label": "IP Total No. of Cases",
-   "number_card_name": "IP Total No. of Cases"
-  },
-  {
    "label": "No. of Notices",
    "number_card_name": "IP Notice"
+  },
+  {
+   "label": "IP Total No. of Cases",
+   "number_card_name": "IP Total No. of Cases"
   },
   {
    "label": "No. of Open Cases",
@@ -60,14 +60,24 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "IP"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
  "sequence_id": 4.0,
  "shortcuts": [
   {
    "color": "Grey",
    "doc_view": "New",
    "label": "New Notice",
-   "link_to": "Notice Master",
+   "link_to": "Old Notice Master",
    "stats_filter": "[]",
    "type": "DocType"
   },

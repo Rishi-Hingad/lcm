@@ -1,26 +1,31 @@
 import frappe
-from frappe.utils import nowdate
+from frappe.utils import cstr
+from datetime import datetime
 
 @frappe.whitelist()
-def get_hearing_events(start, end):
+def get_hearing_dates(start, end):
+    hearing_dates = frappe.db.sql("""
+        SELECT 
+            hdt.name AS event_id,                  -- Unique identifier for the event
+            hdt.hearing_date AS start_date,        -- Start and end date
+            hdt.hearing_details_link AS title      -- Title to display
+        FROM 
+            `tabHearing Date` hdt
+        WHERE 
+            hdt.hearing_date BETWEEN %(start)s AND %(end)s
+    """, {"start": start, "end": end}, as_dict=True)
+
+    # Debug log to verify returned data
+    frappe.log_error(hearing_dates, "Hearing Dates Retrieved")
+
     events = []
-    hearing_details = frappe.get_all(
-        'Hearing Details',
-        fields=['name', 'hearing_date', 'case_title', 'legal_team'],
-        filters={
-            'hearing_date': ['between', [start, end]]
-        }
-    )
-    for hearing in hearing_details:
-        # Define colors based on `legal_team`
-        color = '#FF5733' if hearing['legal_team'] == 'IP' else (
-            '#33C3FF' if hearing['legal_team'] == 'Legal' else '#28A745')
-        # Append event details to events list
+    for hearing in hearing_dates:
         events.append({
-            'name': hearing['name'],
-            'start': hearing['hearing_date'],
-            'title': hearing['case_title'],
-            'doctype': 'Hearing Details',
-            'color': color
+            "doctype": "Hearing Date",
+            "name": hearing.get("event_id"),
+            "title": hearing.get("title"),        # Title populated with hearing_details_link
+            "start": hearing.get("start_date"),
+            "end": hearing.get("start_date"),
         })
+
     return events

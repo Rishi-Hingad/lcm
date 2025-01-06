@@ -10,8 +10,9 @@
   "opposing_clients_section",
   "name1",
   "mobile_number",
-  "email",
   "address",
+  "column_break_bfcr",
+  "email",
   "location",
   "nature"
  ],
@@ -43,6 +44,7 @@
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Address"
   },
   {
@@ -56,12 +58,16 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nature"
+  },
+  {
+   "fieldname": "column_break_bfcr",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-07 11:51:20.046152",
+ "modified": "2024-12-23 12:53:56.178452",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Opposing Clients",
