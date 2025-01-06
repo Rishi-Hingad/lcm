@@ -141,11 +141,11 @@ fixtures = [
             "Lawyer Master",
             "People Master",
             "Custom Script",
-            "Notice Master",
-            "Case Master",
-            "Opposing Clients",
-            "Case Witness",
-            "Hearing Details",
+            # "Notice Master",
+            # "Case Master",
+            # "Opposing Clients",
+            # "Case Witness",
+            # "Hearing Details",
             "Calendar View",
             ]
 
