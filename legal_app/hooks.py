@@ -134,7 +134,7 @@ app_license = "mit"
 # }
 
 fixtures = [
-    # "Custom Script",
+            "Custom Script",
             # "Notice Master",
             # "Case Master",
             # "Hearing Details",
@@ -142,11 +142,11 @@ fixtures = [
             # "People Master",
             # "Opposing Clients",
             # "Case Witness",
-            # "Case Types Master",
-            # "Meril Role Master",
-            # "Case Stages Master",
-            # "Currency Master",
-            # "Calendar View"
+            "Case Types Master",
+            "Meril Role Master",
+            "Case Stages Master",
+            "Currency Master",
+            "Calendar View"
             ]
 
 
