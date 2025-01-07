@@ -58,7 +58,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Case Number",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -66,15 +65,13 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Meril Entity",
-   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd",
-   "reqd": 1
+   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd"
   },
   {
    "fieldname": "opposite_party",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Opposite Party",
-   "reqd": 1
+   "label": "Opposite Party"
   },
   {
    "fieldname": "case_type",
@@ -107,14 +104,12 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Lawyer",
-   "options": "Lawyer Master",
-   "reqd": 1
+   "options": "Lawyer Master"
   },
   {
    "fieldname": "filing_date",
    "fieldtype": "Date",
-   "label": "Filing Date",
-   "reqd": 1
+   "label": "Filing Date"
   },
   {
    "fieldname": "amount",
@@ -137,8 +132,7 @@
    "fieldname": "case_stage",
    "fieldtype": "Link",
    "label": "Case Stage",
-   "options": "Case Stages Master",
-   "reqd": 1
+   "options": "Case Stages Master"
   },
   {
    "fieldname": "case_status",
@@ -234,7 +228,7 @@
    "link_fieldname": "case"
   }
  ],
- "modified": "2024-12-26 09:30:03.823163",
+ "modified": "2025-01-07 10:48:38.399897",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Master",
