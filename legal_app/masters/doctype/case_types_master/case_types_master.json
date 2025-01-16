@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{case_types}",
  "creation": "2024-10-23 11:05:43.886486",
@@ -18,7 +19,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-23 11:06:55.893009",
+ "modified": "2025-01-08 16:49:05.626357",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Case Types Master",
@@ -40,5 +41,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

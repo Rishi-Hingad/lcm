@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{hearing_details_link}-{##}",
  "creation": "2025-01-02 12:31:03.111256",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -41,10 +42,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-02 12:33:38.680460",
+ "modified": "2025-01-09 15:29:12.714094",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Hearing Date",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

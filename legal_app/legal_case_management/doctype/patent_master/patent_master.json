@@ -1,29 +1,24 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{meril_role}",
- "creation": "2024-10-23 10:46:36.888304",
+ "creation": "2025-01-11 12:59:20.220481",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "meril_role"
+  "section_break_owrb"
  ],
  "fields": [
   {
-   "fieldname": "meril_role",
-   "fieldtype": "Data",
-   "label": "Meril Role",
-   "unique": 1
+   "fieldname": "section_break_owrb",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-08 16:50:06.774141",
+ "modified": "2025-01-11 12:59:20.220481",
  "modified_by": "Administrator",
- "module": "Masters",
- "name": "Meril Role Master",
- "naming_rule": "Expression",
+ "module": "Legal Case Management",
+ "name": "Patent Master",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,6 +36,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

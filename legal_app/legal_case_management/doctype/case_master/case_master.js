@@ -11,10 +11,12 @@ frappe.ui.form.on("Case Master", {
 
                     if (user_data) {
                         const legal_team = user_data.legal_team;
+                        const email = user_data.email;
 
                         if (legal_team) {
                             // Set the value of legal_team in the Case Master Doctype
                             frm.set_value("legal_team", legal_team);
+                            frm.set_value("email_address", email);
                             frm.set_df_property("legal_team", "read_only", 1);
                         } else {
                             frappe.msgprint("No legal team assigned to the current user.");

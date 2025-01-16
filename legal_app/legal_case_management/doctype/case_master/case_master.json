@@ -65,7 +65,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Meril Entity",
-   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd"
+   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd\nMeril Endo Surgery Pvt. Ltd\nMeril Healthcare Pvt. Ltd\nMeril Medical Innovations Pvt. Ltd"
   },
   {
    "fieldname": "opposite_party",
@@ -228,7 +228,7 @@
    "link_fieldname": "case"
   }
  ],
- "modified": "2025-01-07 10:48:38.399897",
+ "modified": "2025-01-09 12:40:44.750065",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Master",
