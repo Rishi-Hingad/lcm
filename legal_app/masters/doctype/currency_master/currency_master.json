@@ -36,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-06 18:47:15.372068",
+ "modified": "2025-01-09 10:15:28.963677",
  "modified_by": "Administrator",
  "module": "Masters",
  "name": "Currency Master",
@@ -58,5 +58,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

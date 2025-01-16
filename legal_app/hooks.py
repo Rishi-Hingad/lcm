@@ -161,21 +161,14 @@ doc_events = {
 # 		"on_trash": "method"
 # 	}
     "HearingDetails": {
-        "onload": "legal_app.legal_app.api.get_hearing_dates"
-    },
-
-    "HearingDetails": {
-        "after_insert": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_notification",
+        "onload": "legal_app.legal_app.api.get_hearing_dates",
+        "on_update": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_notification",
+        "validate": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
     },
 
     "CaseMaster": {
         "after_insert": "legal_app.legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
     },
-
-    "HearingDetails": {
-        "validate": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
-
-    }
 }
 
 calendar_events = {

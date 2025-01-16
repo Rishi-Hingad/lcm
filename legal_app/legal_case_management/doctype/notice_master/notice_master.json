@@ -37,7 +37,7 @@
    "fieldname": "meril_entity",
    "fieldtype": "Select",
    "label": "Meril Entity",
-   "options": "-Select-\nMicro Life Sciences Private Limited\nMeril Life Sciences Private Limited\nMeril Life Sciences India Private Limited\nMeril Diagnostics Private Limited\nMeril Endo Surgery Private Limited\nMeril Healthcare Private Limited\nMeril Medical Innovations Private Limited\nNone"
+   "options": "- Select -\nMicro Life Sciences Private Limited\nMeril Life Sciences Private Limited\nMeril Life Sciences India Private Limited\nMeril Diagnostics Private Limited\nMeril Endo Surgery Private Limited\nMeril Healthcare Private Limited\nMeril Medical Innovations Private Limited\nNone"
   },
   {
    "fieldname": "opposite_party",
@@ -104,7 +104,7 @@
    "link_fieldname": "notice_number"
   }
  ],
- "modified": "2024-12-26 09:29:29.343458",
+ "modified": "2025-01-08 17:55:44.744015",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Notice Master",
