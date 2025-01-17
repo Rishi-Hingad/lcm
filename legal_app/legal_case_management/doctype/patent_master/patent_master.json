@@ -5,17 +5,18 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_owrb"
+  "patent_number"
  ],
  "fields": [
   {
-   "fieldname": "section_break_owrb",
-   "fieldtype": "Section Break"
+   "fieldname": "patent_number",
+   "fieldtype": "Data",
+   "label": "Patent Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-11 12:59:20.220481",
+ "modified": "2025-01-17 10:06:27.838726",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Patent Master",
