@@ -159,7 +159,9 @@
   {
    "fieldname": "case_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Case Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -183,7 +185,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-17 12:57:22.433432",
+ "modified": "2025-02-20 12:29:56.457990",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Patent Master",

@@ -5,7 +5,7 @@
  "creation": "2025-01-24 16:36:37.798975",
  "docstatus": 0,
  "doctype": "Dashboard Chart",
- "document_type": "Patent Cases",
+ "document_type": "Patent Master",
  "dynamic_filters_json": "[]",
  "filters_json": "[[\"Patent Master\",\"case_type\",\"=\",\"National Court\",false]]",
  "group_by_type": "Count",
