@@ -16,7 +16,7 @@ def execute(filters=None):
 def get_columns(filters):
     # Define the columns for the report
     column_order = [
-        "name", "case_no", "case_status", "filing_date", "hearing_date", 
+        "name", "case_no", "status", "filing_date", "hearing_date", 
         "details_of_hearing", "opposite_party", "case_stage", "court_name", "lawyer"
     ]
     
@@ -40,7 +40,7 @@ def get_data(filters):
         	hd.name,
             hd.case_no,
             cm.case_number,
-            cm.case_status,
+            cm.status,
             cm.filing_date,
             STRING_AGG(DISTINCT hdt.hearing_date::TEXT, E'\n\n') AS hearing_date,
             STRING_AGG(DISTINCT hdt.details_of_hearing, E'\n\n') AS details_of_hearing,
@@ -64,8 +64,8 @@ def get_data(filters):
     conditions = []
     if filters.get("case_no"):
         conditions.append("cm.name = %(case_number)s")
-    if filters.get("case_status"):
-        conditions.append("cm.case_status = %(case_status)s")
+    if filters.get("status"):
+        conditions.append("cm.status = %(status)s")
     if filters.get("lawyer_name"):
         conditions.append("cm.lawyer_name = %(lawyer_name)s")
     if filters.get("filing_year"):
@@ -82,7 +82,7 @@ def get_data(filters):
     
     query += """
         GROUP BY
-            hd.name, cm.case_number, cm.case_status, cm.filing_date,
+            hd.name, cm.case_number, cm.status, cm.filing_date,
             cm.opposite_party, cm.case_stage, cm.court_name, lm.name
     """
     

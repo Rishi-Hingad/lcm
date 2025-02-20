@@ -9,28 +9,30 @@
  "field_order": [
   "details_section",
   "legal_team",
+  "notice_number",
   "email_address",
   "case_number",
   "meril_entity",
-  "opposite_party",
+  "meril_role",
   "case_type",
   "case_description",
-  "case_documents",
   "column_break_pfyn",
-  "notice_number",
   "lawyer_name",
+  "opposite_party",
+  "opposite_party_lawyer",
   "filing_date",
   "amount",
   "currency_type",
-  "meril_role",
   "case_stage",
-  "case_status",
+  "status",
+  "case_documents",
   "location_section",
   "city_name",
   "state_name",
   "column_break_ivla",
   "country_name",
   "court_location_details_section",
+  "court_type",
   "court_name",
   "court_city_name",
   "column_break_xynx",
@@ -65,7 +67,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Meril Entity",
-   "options": "-Select-\nMeril Diagnostics Pvt Ltd\nMeril Life Sciences Pvt. Ltd\nMeril Endo Surgery Pvt. Ltd\nMeril Healthcare Pvt. Ltd\nMeril Medical Innovations Pvt. Ltd"
+   "options": "-Select-\nMicro Life Sciences Private Limited\nMeril Diagnostics Private Limited\nMeril Life Sciences Private Limited\nMeril Life Sciences India Private Limited\nMeril Endo Surgery Private Limited\nMeril Healthcare Private Limited\nMeril Medical Innovations Private Limited\nMeril Corporation (I) Private Limited"
   },
   {
    "fieldname": "opposite_party",
@@ -103,7 +105,7 @@
    "fieldname": "lawyer_name",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Lawyer",
+   "label": "Meril Lawyer",
    "options": "Lawyer Master"
   },
   {
@@ -133,12 +135,6 @@
    "fieldtype": "Link",
    "label": "Case Stage",
    "options": "Case Stages Master"
-  },
-  {
-   "fieldname": "case_status",
-   "fieldtype": "Select",
-   "label": "Case Status",
-   "options": "Open\nClosed\nRe-Open"
   },
   {
    "fieldname": "location_section",
@@ -219,6 +215,25 @@
    "fieldname": "email_address",
    "fieldtype": "Data",
    "label": "Email Address"
+  },
+  {
+   "fieldname": "opposite_party_lawyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opposite Party Lawyer",
+   "options": "Lawyer Master"
+  },
+  {
+   "fieldname": "court_type",
+   "fieldtype": "Link",
+   "label": "Court Type",
+   "options": "Court Types Master"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Case Status",
+   "options": "Open\nClosed\nRe-Open"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -228,7 +243,7 @@
    "link_fieldname": "case"
   }
  ],
- "modified": "2025-01-09 12:40:44.750065",
+ "modified": "2025-02-18 09:45:55.573329",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Master",
@@ -250,6 +265,19 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Green",
+   "title": "Open"
+  },
+  {
+   "color": "Red",
+   "title": "Closed"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Re-Open"
+  }
+ ],
  "track_changes": 1
 }

@@ -6,10 +6,10 @@
  "docstatus": 0,
  "doctype": "Report",
  "filters": [],
- "idx": 1,
+ "idx": 15,
  "is_standard": "Yes",
  "letterhead": null,
- "modified": "2025-01-01 16:33:55.571646",
+ "modified": "2025-02-18 11:47:43.917104",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Case Detail Report",
@@ -24,6 +24,12 @@
   },
   {
    "role": "Administrator"
+  },
+  {
+   "role": "Admin"
+  },
+  {
+   "role": "Litigation"
   }
  ],
  "timeout": 0

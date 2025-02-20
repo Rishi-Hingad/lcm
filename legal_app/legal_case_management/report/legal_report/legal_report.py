@@ -16,8 +16,8 @@ def execute(filters=None):
 def get_columns(filters):
     # Define unified columns for the combined report
     column_order = [
-        "case_number", "case_status", "filing_date", "lawyer", "case_type",
-        "opposite_party", "case_stage", "court_name", "meril_role", "meril_entity",
+        "case_number", "status", "filing_date", "lawyer", "case_type",
+        "opposite_party", "opposite_party_lawyer","case_stage", "court_name", "meril_role", "meril_entity",
         "amount", "case_description", "city_name",
         "opposing_clients_name", "opposing_clients_email", "opposing_clients_mobile_number",
         "opposing_clients_location", "opposing_clients_nature", "opposing_clients_address",
@@ -40,7 +40,7 @@ def get_data(filters):
     query = """
         SELECT
             cm.case_number,
-            cm.case_status,
+            cm.status,
             cm.filing_date, 
             lm.name AS lawyer,
             cm.case_type,
@@ -52,6 +52,7 @@ def get_data(filters):
             cm.amount,
             cm.case_description,
             cm.city_name,
+            lwm.name AS opposite_party_lawyer,
             STRING_AGG(DISTINCT oc.name1, ',\n') AS opposing_clients_name,
             STRING_AGG(DISTINCT oc.email, ',\n') AS opposing_clients_email,
             STRING_AGG(DISTINCT oc.mobile_number, ',\n') AS opposing_clients_mobile_number,
@@ -71,6 +72,8 @@ def get_data(filters):
         LEFT JOIN
             `tabLawyer Master` lm ON cm.lawyer_name = lm.name
         LEFT JOIN
+            `tabLawyer Master` lwm ON cm.opposite_party_lawyer = lwm.name
+        LEFT JOIN
             `tabOpposing Clients` oc ON oc.parent = cm.name
         LEFT JOIN
             `tabCase Witness` cw ON cw.parent = cm.name
@@ -85,8 +88,8 @@ def get_data(filters):
     conditions = []
     if filters.get("case_number"):
         conditions.append("cm.case_number = %(case_number)s")
-    if filters.get("case_status"):
-        conditions.append("cm.case_status = %(case_status)s")
+    if filters.get("status"):
+        conditions.append("cm.status = %(status)s")
     if filters.get("lawyer_name"):
         conditions.append("cm.lawyer_name = %(lawyer_name)s")
     if filters.get("filing_year"):
@@ -103,8 +106,8 @@ def get_data(filters):
 
     query += """
         GROUP BY
-            cm.case_number, cm.case_status, cm.filing_date, lm.name,
-            cm.case_type, cm.opposite_party, cm.case_stage, cm.court_name,
+            cm.case_number, cm.status, cm.filing_date, lm.name,
+            cm.case_type, cm.opposite_party, lwm.name, cm.case_stage, cm.court_name,
             cm.meril_role, cm.meril_entity, cm.amount, cm.case_description, cm.city_name
     """
 
