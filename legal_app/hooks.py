@@ -148,7 +148,8 @@ fixtures = [
             # "Hearing Details",
             "Calendar View",
             "Custom HTML Block",
-            "Role"
+            "Role",
+            "User"
             ]
 
 
