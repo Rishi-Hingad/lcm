@@ -140,13 +140,15 @@ fixtures = [
             "Currency Master",
             "Lawyer Master",
             "People Master",
-            "Custom Script",
+            "Client Script",
             # "Notice Master",
             # "Case Master",
             # "Opposing Clients",
             # "Case Witness",
             # "Hearing Details",
             "Calendar View",
+            "Custom HTML Block",
+            "Role"
             ]
 
 
