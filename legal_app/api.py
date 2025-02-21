@@ -23,7 +23,7 @@ def get_hearing_dates(start, end):
         events.append({
             "doctype": "Hearing Date",
             "name": hearing.get("event_id"),
-            "title": hearing.get("title"),        # Title populated with hearing_details_link
+            "title": hearing.get("title"),
             "start": hearing.get("start_date"),
             "end": hearing.get("start_date"),
         })

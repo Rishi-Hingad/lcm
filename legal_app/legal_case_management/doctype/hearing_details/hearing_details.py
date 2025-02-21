@@ -132,7 +132,6 @@ class HearingDetails(Document):
                 "message": "Failed to send email."
             }
         
-    @frappe.whitelist()
     def send_reminder_emails(self):
         smtp_server = "smtp.transmail.co.in"
         smtp_port = 587
