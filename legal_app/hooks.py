@@ -164,19 +164,19 @@ doc_events = {
 # 		"on_trash": "method"
 # 	}
     "HearingDetails": {
-        "onload": "legal_app.legal_app.api.get_hearing_dates",
-        "on_update": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_notification",
-        "validate": "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
+        "onload": "legal_app.api.get_hearing_dates",
+        "on_update": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_notification",
+        "validate": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
     },
 
     "CaseMaster": {
-        "after_insert": "legal_app.legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
+        "after_insert": "legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
     },
 }
 
 calendar_events = {
     "Hearing Details": {
-        "get_events": "legal_app.legal_app.legal_case_management.doctype.hearing_details.hearing_details.get_events"
+        "get_events": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.get_events"
     }
 }
 
@@ -188,7 +188,7 @@ scheduler_events = {
 # 		"legal_app.tasks.all"
 # 	],
  	"daily": [
-        "legal_app.legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_reminder_emails"
+        "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_reminder_emails"
     ],
 # 	"hourly": [
 # 		"legal_app.tasks.hourly"
