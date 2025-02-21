@@ -132,86 +132,69 @@ class HearingDetails(Document):
                 "message": "Failed to send email."
             }
         
-    def send_reminder_emails(self):
-        smtp_server = "smtp.transmail.co.in"
-        smtp_port = 587
-        smtp_user = "emailapikey"
-        smtp_password = "PHtE6r1cF7jiim598RZVsPW9QMCkMN96/uNveQUTt4tGWPNRTk1U+tgokDO0rRx+UKZAHKPInos5tbqZtbiHdz6/Z2dED2qyqK3sx/VYSPOZsbq6x00as1wSc0TfUILscdds1CLfutnYNA=="
-        from_address = 'noreply@merillife.com'
-        bcc_address = "rishi.hingad@merillife.com"
-        to_address = self.email_address
+def send_reminder_emails(self):
+    smtp_server = "smtp.transmail.co.in"
+    smtp_port = 587
+    smtp_user = "emailapikey"
+    smtp_password = "PHtE6r1cF7jiim598RZVsPW9QMCkMN96/uNveQUTt4tGWPNRTk1U+tgokDO0rRx+UKZAHKPInos5tbqZtbiHdz6/Z2dED2qyqK3sx/VYSPOZsbq6x00as1wSc0TfUILscdds1CLfutnYNA=="
+    from_address = 'noreply@merillife.com'
+    bcc_address = "rishi.hingad@merillife.com"
+    to_address = self.email_address
 
-        print(f"Debug: Starting to send reminder emails for Case Number: {self.case_no}, Hearing Details: {self.name}")
-        print(f"Debug: SMTP Server: {smtp_server}, Port: {smtp_port}, From Address: {from_address}, To Address: {to_address}")
+    print(f"Debug: Starting to send reminder emails for Case Number: {self.case_no}, Hearing Details: {self.name}")
+    print(f"Debug: SMTP Server: {smtp_server}, Port: {smtp_port}, From Address: {from_address}, To Address: {to_address}")
 
-        for entry in self.get('hearing_date_table', []):
-            hearing_date = entry.get('hearing_date')
-            print(f"Debug: Processing hearing date: {hearing_date}")
+    for entry in self.get('hearing_date_table', []):
+        hearing_date = entry.get('hearing_date')
+        print(f"Debug: Processing hearing date: {hearing_date}")
 
-            if not hearing_date:
-                print("Debug: Skipping entry due to missing hearing date.")
-                continue
+        if not hearing_date:
+            print("Debug: Skipping entry due to missing hearing date.")
+            continue
 
-            try:
-                hearing_date_obj = datetime.strptime(hearing_date, "%Y-%m-%d")
-            except ValueError as ve:
-                print(f"Debug: Invalid date format for hearing date: {hearing_date}, Error: {ve}")
-                continue
+        try:
+            hearing_date_obj = datetime.strptime(hearing_date, "%Y-%m-%d")
+        except ValueError as ve:
+            print(f"Debug: Invalid date format for hearing date: {hearing_date}, Error: {ve}")
+            continue
 
-            reminders = [
-                (hearing_date_obj - timedelta(days=7), "7 days"),
-                (hearing_date_obj - timedelta(days=5), "5 days"),
-                (hearing_date_obj - timedelta(days=1), "1 day")
-            ]
-            print(f"Debug: Calculated reminders for hearing date {hearing_date}: {reminders}")
+        reminders = [
+            (hearing_date_obj - timedelta(days=7), "7 days"),
+            (hearing_date_obj - timedelta(days=5), "5 days"),
+            (hearing_date_obj - timedelta(days=1), "1 day")
+        ]
+        print(f"Debug: Calculated reminders for hearing date {hearing_date}: {reminders}")
 
-            for reminder_date, days_before in reminders:
-                print(f"Debug: Checking if reminder date {reminder_date.date()} matches today's date {datetime.today().date()}")
-                if reminder_date.date() == datetime.today().date():
-                    print(f"Debug: Preparing to send reminder email for hearing date in {days_before}")
-                    subject = f"Reminder: Hearing Date in {days_before} for Case {self.case_no}"
-                    body = f"""
-                    Dear Team,
+        for reminder_date, days_before in reminders:
+            print(f"Debug: Checking if reminder date {reminder_date.date()} matches today's date {datetime.today().date()}")
+            if reminder_date.date() == datetime.today().date():
+                print(f"Debug: Preparing to send reminder email for hearing date in {days_before}")
+                subject = f"Reminder: Hearing Date in {days_before} for Case {self.case_no}"
+                body = f"""
+                Dear Team,
 
-                    This is a reminder that the hearing date for your Case Number: {self.case_no} is scheduled in {days_before}.
-                    Hearing Date: {hearing_date}
-                    Hearing Detail Reference: {self.name}
+                This is a reminder that the hearing date for your Case Number: {self.case_no} is scheduled in {days_before}.
+                Hearing Date: {hearing_date}
+                Hearing Detail Reference: {self.name}
 
-                    Please make necessary arrangements.
+                Please make necessary arrangements.
 
-                    Thank you.
-                    """
-                    msg = MIMEMultipart()
-                    msg["From"] = from_address
-                    msg["To"] = self.email_address
-                    msg["Subject"] = subject
-                    msg["Bcc"] = bcc_address
-                    msg.attach(MIMEText(body, "plain"))
+                Thank you.
+                """
+                msg = MIMEMultipart()
+                msg["From"] = from_address
+                msg["To"] = self.email_address
+                msg["Subject"] = subject
+                msg["Bcc"] = bcc_address
+                msg.attach(MIMEText(body, "plain"))
 
-                    try:
-                        with smtplib.SMTP(smtp_server, smtp_port) as server:
-                            server.starttls()
-                            server.login(smtp_user, smtp_password)
-                            server.sendmail(from_address, [self.email_address, bcc_address], msg.as_string())
-                            print(f"Debug: Reminder email sent for hearing date in {days_before}!")
+                try:
+                    with smtplib.SMTP(smtp_server, smtp_port) as server:
+                        server.starttls()
+                        server.login(smtp_user, smtp_password)
+                        server.sendmail(from_address, [self.email_address, bcc_address], msg.as_string())
+                        print(f"Debug: Reminder email sent for hearing date in {days_before}!")
 
-                            doc = frappe.get_doc({
-                                'doctype': 'Email Log',
-                                'case_number': self.case_no,
-                                'hearing_details': self.name,
-                                'to_email': to_address,
-                                'from_email': from_address,
-                                'message': body,
-                                'status': "Successfully Sent",
-                                'screen': "Hearing Details Notification",
-                                'created_by': from_address
-                            })
-                            doc.insert(ignore_permissions=True)
-                            frappe.db.commit()
-
-                    except Exception as e:
-                        print(f"Debug: Failed to send email for hearing date in {days_before}, Error: {e}")
-                        msge = f"Failed to send email: {e}"
                         doc = frappe.get_doc({
                             'doctype': 'Email Log',
                             'case_number': self.case_no,
@@ -219,17 +202,34 @@ class HearingDetails(Document):
                             'to_email': to_address,
                             'from_email': from_address,
                             'message': body,
-                            'status': msge,
+                            'status': "Successfully Sent",
                             'screen': "Hearing Details Notification",
                             'created_by': from_address
                         })
                         doc.insert(ignore_permissions=True)
                         frappe.db.commit()
-    
-    @frappe.whitelist()
-    def on_update(self):
-        # This method is triggered after the update operation
-        self.send_reminder_emails()
+
+                except Exception as e:
+                    print(f"Debug: Failed to send email for hearing date in {days_before}, Error: {e}")
+                    msge = f"Failed to send email: {e}"
+                    doc = frappe.get_doc({
+                        'doctype': 'Email Log',
+                        'case_number': self.case_no,
+                        'hearing_details': self.name,
+                        'to_email': to_address,
+                        'from_email': from_address,
+                        'message': body,
+                        'status': msge,
+                        'screen': "Hearing Details Notification",
+                        'created_by': from_address
+                    })
+                    doc.insert(ignore_permissions=True)
+                    frappe.db.commit()
+
+@frappe.whitelist()
+def on_update(self):
+    # This method is triggered after the update operation
+    self.send_reminder_emails()
 
 
 def get_events(start, end, filters=None):
