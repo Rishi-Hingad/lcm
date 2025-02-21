@@ -188,7 +188,7 @@ scheduler_events = {
 # 		"legal_app.tasks.all"
 # 	],
  	"daily": [
-        "legal_app.legal_case_management.doctype.hearing_details.hearing_details.HearingDetails.send_reminder_emails"
+        "legal_app.legal_case_management.doctype.hearing_details.hearing_details.send_reminder_emails"
     ],
 # 	"hourly": [
 # 		"legal_app.tasks.hourly"
