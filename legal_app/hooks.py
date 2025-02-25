@@ -149,7 +149,7 @@ fixtures = [
             "Calendar View",
             "Custom HTML Block",
             "Role",
-            "User"
+            "Custom Field"
             ]
 
 
