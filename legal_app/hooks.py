@@ -163,13 +163,13 @@ doc_events = {
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
-    "HearingDetails": {
+    "Hearing Details": {
         "onload": "legal_app.api.get_hearing_dates",
         "on_update": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.HearingDetails.send_email_notification",
         "validate": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.HearingDetails.validate",
     },
 
-    "CaseMaster": {
+    "Case Master": {
         "after_insert": "legal_app.legal_case_management.doctype.case_master.case_master.CaseMaster.notify_case_creation",
     },
 }
