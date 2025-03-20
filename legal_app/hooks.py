@@ -27,6 +27,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/legal_app/css/legal_app.css"
 # app_include_js = "/assets/legal_app/js/legal_app.js"
+app_include_js = ["/assets/legal_app/js/legal_case_management.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/legal_app/css/legal_app.css"
@@ -165,8 +166,8 @@ doc_events = {
 # 	}
     "Hearing Details": {
         "onload": "legal_app.api.get_hearing_dates",
-        "on_update": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.HearingDetails.send_email_notification",
-        "validate": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.HearingDetails.validate",
+        "on_update": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_on_hearing_date_added",
+        # "validate": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
     },
 
     "Case Master": {
@@ -176,7 +177,7 @@ doc_events = {
 
 calendar_events = {
     "Hearing Details": {
-        "get_events": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.hearing_details.get_events"
+        "get_events": "legal_app.legal_case_management.doctype.hearing_details.get_events"
     }
 }
 
@@ -188,7 +189,7 @@ scheduler_events = {
 # 		"legal_app.tasks.all"
 # 	],
  	"daily": [
-        "legal_app.legal_case_management.doctype.hearing_details.hearing_details.send_reminder_emails"
+        "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_reminder_emails"
     ],
 # 	"hourly": [
 # 		"legal_app.tasks.hourly"
