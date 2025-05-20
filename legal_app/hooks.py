@@ -171,7 +171,7 @@ doc_events = {
     },
 
     "Case Master": {
-        "after_insert": "legal_app.legal_case_management.doctype.case_master.case_master.CaseMaster.notify_case_creation",
+        "after_insert": "legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
     },
 }
 
