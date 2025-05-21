@@ -21,8 +21,8 @@
    "label": "Total No. of Cases"
   },
   {
-   "chart_name": "Team Distribution",
-   "label": "Team Distribution"
+   "chart_name": "Meril Roles",
+   "label": "Meril Entity Distribution"
   }
  ],
  "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"CGKSiWJeW9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total No. of Cases\",\"col\":3}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":3}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":3}},{\"id\":\"4HWd6iDse5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Complete Case Report\",\"col\":4}},{\"id\":\"Ck52MFwPiP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Master Report\",\"col\":4}},{\"id\":\"OHle2kVom_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Hearing Report\",\"col\":4}},{\"id\":\"jV3fIZUqvr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":12}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":12}},{\"id\":\"8P_xMU8uEA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Team Distribution\",\"col\":12}}]",
@@ -38,7 +38,7 @@
  "is_hidden": 0,
  "label": "LCMS",
  "links": [],
- "modified": "2025-02-18 12:09:32.206818",
+ "modified": "2025-05-21 15:41:00.901420",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "LCMS",
@@ -79,6 +79,7 @@
    "doc_view": "List",
    "label": "Complete Case Report",
    "link_to": "Legal Report",
+   "report_ref_doctype": "Case Master",
    "type": "Report",
    "url": "http://localhost:8002/app/hearing-details/view/calendar/Upcoming%20Hearing%20Date"
   },
@@ -94,6 +95,7 @@
    "doc_view": "List",
    "label": "Case Hearing Report",
    "link_to": "Hearing Details Report",
+   "report_ref_doctype": "Hearing Details",
    "type": "Report"
   }
  ],

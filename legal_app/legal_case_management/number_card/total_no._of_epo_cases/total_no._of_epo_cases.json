@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "color": "#29CD42",
+ "color": "#ED6396",
  "creation": "2025-01-24 16:14:24.648099",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 0,
  "is_standard": 1,
  "label": "Total No. of National Court Case",
- "modified": "2025-02-05 15:06:30.421628",
+ "modified": "2025-05-21 15:16:49.443990",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "Total No. of EPO Cases",

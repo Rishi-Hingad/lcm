@@ -17,13 +17,13 @@ class CaseMaster(Document):
         to_address = self.email_address
         bcc_address = "rishi.hingad@merillife.com"
 
-        subject = f"New Case Created: {self.case_no}"
+        subject = f"New Case Created: {self.case_number}"
         body = f"""
         Dear Team,
 
         A new case has been created in the system. Below are the details:
 
-        Case Number: {self.case_no}
+        Case Number: {self.case_number}
         Court Name: {self.court_name}
         Court City: {self.court_city_name}
         Court State: {self.court_state_name}
@@ -51,7 +51,7 @@ class CaseMaster(Document):
                 # Log the email
                 doc = frappe.get_doc({
                     'doctype': 'Email Log',
-                    'case_number': self.case_no,
+                    'case_number': self.case_number,
                     'to_email': to_address,
                     'from_email': from_address,
                     'message': body,
@@ -67,7 +67,7 @@ class CaseMaster(Document):
             error_message = f"Failed to send email: {e}"
             doc = frappe.get_doc({
                 'doctype': 'Email Log',
-                'case_number': self.case_no,
+                'case_number': self.case_number,
                 'to_email': to_address,
                 'from_email': from_address,
                 'message': body,
@@ -77,3 +77,7 @@ class CaseMaster(Document):
             })
             doc.insert(ignore_permissions=True)
             frappe.db.commit()
+
+# Hook-compatible wrapper function
+def after_insert_notify(doc, method):
+    doc.notify_case_creation()

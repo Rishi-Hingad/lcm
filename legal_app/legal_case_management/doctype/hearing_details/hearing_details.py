@@ -258,3 +258,9 @@ def get_events(start_date, end_date, filters=None):
         }
         for event in events
     ]
+
+def send_email_wrapper(doc, method=None):
+    # This assumes hearing_date_entry is a child table or something accessible via doc
+    if hasattr(doc, 'hearing_date'):
+        for hearing_date_entry in doc.hearing_date:
+            doc.send_email_on_hearing_date_added(hearing_date_entry)

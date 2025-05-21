@@ -166,12 +166,12 @@ doc_events = {
 # 	}
     "Hearing Details": {
         "onload": "legal_app.api.get_hearing_dates",
-        "on_update": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.send_email_on_hearing_date_added",
+        "on_update": "legal_app.legal_case_management.doctype.hearing_details.hearing_details.send_email_wrapper",
         # "validate": "legal_app.legal_case_management.doctype.hearing_details.HearingDetails.validate",
     },
 
     "Case Master": {
-        "after_insert": "legal_app.legal_case_management.doctype.case_master.CaseMaster.notify_case_creation",
+        "after_insert": "legal_app.legal_case_management.doctype.case_master.case_master.after_insert_notify",
     },
 }
 
