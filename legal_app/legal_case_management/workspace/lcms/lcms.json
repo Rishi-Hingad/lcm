@@ -5,12 +5,16 @@
    "label": "No. of Closed Cases"
   },
   {
-   "chart_name": "Case Type Distribution",
-   "label": "Case Type Distribution"
+   "chart_name": "Case Stages",
+   "label": "Case Stages"
   },
   {
    "chart_name": "Meril Roles",
-   "label": "Meril Roles"
+   "label": "Meril Entity"
+  },
+  {
+   "chart_name": "Case Type Distribution",
+   "label": "Case Type Distribution"
   },
   {
    "chart_name": "No. of Open Cases",
@@ -19,13 +23,9 @@
   {
    "chart_name": "Total No. of Cases",
    "label": "Total No. of Cases"
-  },
-  {
-   "chart_name": "Meril Roles",
-   "label": "Meril Entity Distribution"
   }
  ],
- "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"CGKSiWJeW9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total No. of Cases\",\"col\":3}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":3}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":3}},{\"id\":\"4HWd6iDse5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Complete Case Report\",\"col\":4}},{\"id\":\"Ck52MFwPiP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Master Report\",\"col\":4}},{\"id\":\"OHle2kVom_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Hearing Report\",\"col\":4}},{\"id\":\"jV3fIZUqvr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":12}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":12}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Roles\",\"col\":12}},{\"id\":\"8P_xMU8uEA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Team Distribution\",\"col\":12}}]",
+ "content": "[{\"id\":\"ISTQdpjpZ9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"CGKSiWJeW9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total No. of Cases\",\"col\":3}},{\"id\":\"DcnIk9Oe90\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Notices\",\"col\":3}},{\"id\":\"N2QiNTUoco\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Open Cases\",\"col\":3}},{\"id\":\"1qzSxcs8PB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Closed Case\",\"col\":3}},{\"id\":\"4HWd6iDse5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Complete Case Report\",\"col\":4}},{\"id\":\"Ck52MFwPiP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Master Report\",\"col\":4}},{\"id\":\"OHle2kVom_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Hearing Report\",\"col\":4}},{\"id\":\"jV3fIZUqvr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Total No. of Cases\",\"col\":12}},{\"id\":\"QgfbGS-SEf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Open Cases\",\"col\":6}},{\"id\":\"HT89g7IDCV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"No. of Closed Cases\",\"col\":6}},{\"id\":\"a9-ictQJXU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Type Distribution\",\"col\":6}},{\"id\":\"auVPMyUxL7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Case Stages\",\"col\":6}},{\"id\":\"aypwJ2EDvF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Meril Entity\",\"col\":12}}]",
  "creation": "2024-10-28 09:48:20.484120",
  "custom_blocks": [],
  "docstatus": 0,
@@ -38,7 +38,7 @@
  "is_hidden": 0,
  "label": "LCMS",
  "links": [],
- "modified": "2025-05-21 15:41:00.901420",
+ "modified": "2025-05-22 10:38:00.295921",
  "modified_by": "Administrator",
  "module": "Legal Case Management",
  "name": "LCMS",
